@@ -1,3 +1,0 @@
-[submodule "cookbooks/nodejs"]
-	path = cookbooks/nodejs
-	url = https://github.com/mdxp/nodejs-cookbook.git
