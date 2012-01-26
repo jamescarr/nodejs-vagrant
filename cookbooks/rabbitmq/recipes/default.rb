@@ -60,6 +60,13 @@ when "redhat", "centos", "scientific"
   end
 end
 
+node[:rabbitmq_plugins].each do |plugin|
+  rabbitmq_plugin plugin do
+    action :install
+  end
+end
+
+
 service "rabbitmq-server" do
   stop_command "/usr/sbin/rabbitmqctl stop"
   action [:enable, :start]

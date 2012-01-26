@@ -5,6 +5,10 @@
   "node_modules":[
     "coffee-script"
   ],  
+  "rabbitmq_plugins":[
+    "rabbitmq_management",
+    "rabbitmq_management_visualiser"
+  ],  
   "run_list": [ 
    "recipe[apt]",
    "recipe[nginx]",

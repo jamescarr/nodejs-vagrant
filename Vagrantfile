@@ -19,6 +19,7 @@ Vagrant::Config.run do |config|
   end        
   
   config.vm.forward_port 80, 8080
+  config.vm.forward_port 55672, 56672
   # config.vm.forward_port("ftp", 21, 4567)
   # config.vm.forward_port("ssh", 22, 2222, :auto => true)
 end           
