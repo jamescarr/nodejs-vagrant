@@ -1,0 +1,16 @@
+{
+  "gems": [
+    { "name": "rake" }
+  ],
+  "node_modules":[
+    "coffee-script"
+  ],  
+  "run_list": [ 
+   "recipe[nginx]",
+   "recipe[monit]", 
+   "recipe[gems]", 
+   "recipe[nodejs]", 
+   "recipe[rabbitmq]", 
+   "recipe[mongodb]"  
+ ] 
+}
