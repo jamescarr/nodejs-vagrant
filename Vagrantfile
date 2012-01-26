@@ -8,12 +8,13 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = "cookbooks"
     chef.add_recipe("vagrant_main")  
     chef.add_recipe("nginx") 
+    chef.add_recipe("apt") 
     chef.add_recipe("git")   
     chef.add_recipe("ruby") 
     chef.add_recipe("gems") 
     chef.add_recipe("nodejs") 
     chef.add_recipe("mongodb")  
-    #chef.add_recipe("rabbitmq")  
+    chef.add_recipe("rabbitmq")  
     chef.json.merge!(JSON.parse(File.read('dna.json')))
   end        
   

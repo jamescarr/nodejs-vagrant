@@ -22,7 +22,6 @@
 # we'll need to add a LWRP for calling rabbitmqctl stop
 # while still using /etc/init.d/rabbitmq-server start
 # because of this we just put the rabbitmq-env.conf in place and let it rip
-include_recipe 'apt'
 
 directory "/etc/rabbitmq/" do
   owner "root"
